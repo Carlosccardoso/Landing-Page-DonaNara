@@ -1,6 +1,6 @@
 # Dona-Nara-Croche
 
-link do site : https://carlosccardoso.github.io/Dona-Nara-Croche/
+link do site : https://carlosccardoso.github.io/Landing-Page-DonaNara/
 
 Tecnologias Utilizadas
 HTML5
