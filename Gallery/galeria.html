@@ -18,31 +18,12 @@
                         alt="logo"></li>
                 <li><a class="link-nav" href="../index.html">Home</a></li>
                 <li><a class="link-nav" href="../About/About.html">About</a></li>
-                <li><a class="link-nav" href="./galeria.html">Gallery</a></li>
+                <li><a id="admin" class="link-nav" href="./galeria.html">Gallery</a></li>
                 <li><a class="link-nav" href="../Contact/Contact.html">Contact</a></li>
             </ul>
             <a id="btn" class="link-nav" href="../login.html">Login</a>
         </nav>
     </header>
-    <dialog id="modal">
-        <div>
-            <span class="reg">Registrar</span>
-        </div>
-        <div class="modal-input">
-            <div>
-                <span>Nome</span>
-                <input type="text">
-            </div>
-            <div>
-                <span>Senha</span>
-                <input type="password">
-            </div>
-        </div>
-        <div class="modal-button">
-            <button>Registrar</button>
-            <button>Login</button>
-        </div>
-    </dialog>
     <div class="box">
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -131,7 +112,26 @@
             <div class="swiper-button-prev"></div>
         </div>
     </div>
+    <div  class="modal" id="modal">
 
+        
+        <div>
+            <span>
+                Quer mudar o fundo ?
+            </span>
+            <span>
+                Qual cor ?
+            </span>
+            <div class="inputs">
+                <span>cor</span>
+                <br>
+                <input id="cor" type="text">
+                <br><br>
+                <button onclick="Trocarcor()">Trade</button>
+            </div>
+        </div>
+    </div>
+    
     <footer>
         <div>
             <ul>
@@ -141,7 +141,6 @@
             </ul>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".swiper", {
@@ -156,26 +155,8 @@
                 delay: 5000,
             },
         });
-  
-        
-//     document.onkeydown = function(e) {
-
-// if(e.key === 'Escape') {
-//     let blur = document.querySelector("html");
-//         blur.classList.remove('minha-classe')
-// }
-
-// }
-//     const btn = document.querySelector("#btn")
-
-//     btn.onclick = function () {
-//         modal.showModal()
-//         let blur = document.querySelector("html");
-//         blur.classList.add('minha-classe')
-//     }
-
-
     </script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

@@ -17,6 +17,7 @@
         <nav>
             <ul>
                 <li><img class="logo" src="../Galeria/icons/Logotipo.png" alt="logo"></li>
+                <li><a class="link-nav" id="admin" onclick="tradecolor()"></a></li>
                 <li><a class="link-nav" href="../index.html">Home</a></li>
                 <li><a class="link-nav" href="../About/About.html">About</a></li>
                 <li><a class="link-nav" href="../Gallery/galeria.html">Gallery</a></li>
@@ -46,25 +47,7 @@
             </div>
         </div>
     </div>
-    <dialog id="modalReg">
-        <div>
-            <span class="reg">Registrar</span>
-        </div>
-        <div class="modal-input">
-            <div>
-                <span>Nome</span>
-                <input type="text">
-            </div>
-            <div>
-                <span>Senha</span>
-                <input type="password">
-            </div>
-        </div>
-        <div class="modal-button">
-            <button>Registrar</button>
-            <button>Login</button>
-        </div>
-    </dialog>
+
     <dialog id="modal">
         <div>
             <div class="x">
@@ -85,40 +68,7 @@
         </div>
         </div>
     </footer>
-    <script>
-        const buttonOpen = document.querySelector(".btn-5");
-        const buttonClose = document.querySelector(".btn-4");
-        const modal = document.querySelector("#modal");
-        const modalReg = document.querySelector("#modalReg");
-        const modalRegButton = document.querySelector("#btn");
-
-        buttonOpen.onclick = function () {
-            modal.showModal();
-            let blur = document.querySelector("html");
-            blur.classList.add('minha-classe');
-        };
-        
-        buttonClose.onclick = function () {
-            modal.close();
-            let blur = document.querySelector("html");
-            blur.classList.remove('minha-classe');
-        };
-        // document.onkeydown = function (e) {
-        //     if (e.key === 'Escape') {
-        //         modal.close();
-        //         modalReg.close();
-        //         let blur = document.querySelector("html");
-        //         blur.classList.remove('minha-classe');
-        //     }
-        // };
-
-        // modalRegButton.onclick = function () {
-        //     modalReg.showModal();
-        //     let blur = document.querySelector("html");
-        //     blur.classList.add('minha-classe');
-        // };
-
-    </script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
