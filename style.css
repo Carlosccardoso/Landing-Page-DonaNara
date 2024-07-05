@@ -262,3 +262,125 @@ footer div ul li a img {
         translate: -60%;
     }
 }
+
+
+/* LOGIN */
+
+.abrir {
+    display:flex ;
+}
+
+
+body {
+    background-color: #A8E6CF;
+}
+.registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.registro h3 {
+    margin: 50px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    margin-bottom: 100px;
+}
+.registro div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.registro div div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.registro div span {
+    font-size: 20px;
+    padding: 5px auto;
+}
+
+.registro div input {
+    padding: 3px auto;
+}
+
+.registro div button {
+    padding: 5px;
+    max-width: 70px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+
+}
+
+.registro-footer {
+    background-color: #FFFADD;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.login {
+    background-color: #A8E6CF;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: none;
+}
+
+.login h3 {
+    margin: 50px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.login div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.login div div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.login div span {
+    font-size: 20px;
+    padding: 5px auto;
+}
+
+
+.login div input {
+    padding: 3px auto;
+}
+
+.login div button {
+    padding: 5px;
+    max-width: 70px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+
+}
