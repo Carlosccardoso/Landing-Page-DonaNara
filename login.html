@@ -18,10 +18,10 @@
                 <li><img class="logo" src="./Galeria/icons/Logotipo.png" alt="logo"></li>
                 <li><a class="link-nav" href="#">Home</a></li>
                 <li><a class="link-nav" href="./About/About.html">About</a></li>
-                <li><a class="link-nav" href="./Gallery/galeria.html">Gallery</a></li>
+                <li><a id="admin" class="link-nav" href="./Gallery/galeria.html">Gallery</a></li>
                 <li><a class="link-nav" href="./Contact/Contact.html">Contact</a></li>
             </ul>
-            <a id="btn" class="link-nav" href="./login.html">Login</a>
+            <a onclick="sair()" class="link-nav" href="">Sair</a>
         </nav>
     </header>
     <section>
@@ -29,58 +29,47 @@
             <h3>Quer se registrar</h3>
             <div class="container">
                 <span>Nome</span>
-                <input type="text">
+                <input id="NomeR" type="text">
                 <span>Senha</span>
-                <input type="password">
+                <input id="SenhaR" type="password">
                 <div>
-                    <button>Enviar</button>
+                    <button onclick="cadastrar()">Enviar</button>
                     <button onclick="tradePag(1)">Login</button>
                 </div>
             </div>
         </div>
-        <div id="log" class="login">
+        <div id="log" class="login" style="display:none;">
             <h3>Que bom ter você de volta</h3>
             <div class="container">
                 <span>Nome</span>
-                <input type="text">
+                <input id="NomeL" type="text">
                 <span>Senha</span>
-                <input type="password">
+                <input id="SenhaL" type="password">
                 <div>
-                    <button>Enviar</button>
+                    <button onclick="entrar()">Enviar</button>
                     <button onclick="tradePag(2)">Registrar</button>
                 </div>
+            <div class="container" style="display:none;" id="saveValueContainer">
+                <span>Valor para salvar</span>
+                <input id="savedValue" type="text">
+                <button onclick="salvarValor()">Salvar Valor</button>
             </div>
         </div>
     </section>
     <footer class="registro-footer">
         <div>
             <ul>
-                <li><a target=”_blank”
+                <li><a target="_blank"
                         href="https://api.whatsapp.com/send/?phone=5551985908257&text&type=phone_number&app_absent=0"><img
                             src="./Galeria/icons/whats.png" alt=""></a></li>
-                <li><a target=”_blank” href="https://www.facebook.com/nara.cardoso.902?locale=pt_BR"><img
+                <li><a target="_blank" href="https://www.facebook.com/nara.cardoso.902?locale=pt_BR"><img
                             src="./Galeria/icons/faceebook.png" alt=""></a></li>
-                <li><a target=”_blank” href="https://www.instagram.com/naragrazielecardoso/"><img
+                <li><a target="_blank" href="https://www.instagram.com/naragrazielecardoso/"><img
                             src="./Galeria/icons/instagram.png" alt=""></a></li>
             </ul>
         </div>
-        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
-<script>
-    function tradePag(x) {
-        console.log(x);
-        var pagL = document.getElementById("log");
-        var pagR = document.getElementById("reg");
-
-        if (x == 1) {
-            pagL.style.display = 'flex';
-            pagR.style.display = 'none';
-        } else {
-            pagL.style.display = 'none';
-            pagR.style.display = 'flex';
-        }
-    }
-</script>
 
 </html>
