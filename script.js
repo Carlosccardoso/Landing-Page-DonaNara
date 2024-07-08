@@ -70,3 +70,47 @@ function sair() {
     localStorage.setItem("loggedIn", "false");
 }
 
+
+const pontos = [
+    {
+        "pontos_de_croche": [
+            "Ponto Baixissimo",
+            "Ponto Baixo",
+            "Ponto Alto",
+            "Ponto Baixissimo Duplo",
+            "Ponto Fantasia"
+        ]
+    }
+];
+// caso nao conseguisse
+function Ponto(id) {
+    const pag = document.querySelector("#pontos");
+    const Pontos = pontos[0].pontos_de_croche;
+
+    if (id >= 0 && id < Pontos.length) {
+        pag.innerHTML = Pontos[id];
+    } else {
+        console.error('Índice fora dos limites do array');
+    }
+}
+
+function tradPonto(id) {
+    const pag = document.querySelector("#pontos");
+    let url = "/pontos.json";
+    const xmlHttp = new XMLHttpRequest();
+    xmlHttp.open('GET', url, true);
+
+    xmlHttp.onreadystatechange = function () {
+        if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+            let response = JSON.parse(xmlHttp.responseText);
+            if (response && response.pontos_de_croche && response.pontos_de_croche.length > id) {
+                pag.innerHTML = response.pontos_de_croche[id];
+            } else {
+                console.error('Índice inválido ou dados ausentes.');
+            }
+        }
+    };
+
+    xmlHttp.send();
+}
+
