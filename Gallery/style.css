@@ -101,7 +101,6 @@ footer div ul li a img {
 /* Gallery */
 .swiper {
     display: flex;
-    background-color: var(--cormaisforte);
     width: 800px;
     height: 530px;
     margin-top: 100px;
@@ -181,6 +180,19 @@ footer div ul li a img {
     border-radius: 8px;
     font-size: 10px;
     margin-left: 2px;
+}
+
+.cor {
+    padding: 5px;
+    background-color: #ffffff;
+    color: gray;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+}
+/*  */
+.cor :hover {
+    background-color: #4d4c49;
 }
 
 /* Utility Classes */

@@ -74,16 +74,16 @@ function sair() {
 const pontos = [
     {
         "pontos_de_croche": [
-            "Ponto Baixissimo",
-            "Ponto Baixo",
-            "Ponto Alto",
-            "Ponto Baixissimo Duplo",
-            "Ponto Fantasia"
+            "Ponto Baixissimo : É um ponto simples e rápido de fazer. É representado pela sigla “pb” e indica onde inserir a agulha para fazer o ponto.",
+            "Ponto Baixo : É o ponto mais básico do crochê e serve como base para a maioria dos pontos. É representado pela letra “corr” e indica quantas correntes devem ser feitas.",
+            "Ponto Alto : É um ponto mais alto e alongado. É representado pela sigla “pa” e indica onde inserir a agulha para fazer o ponto.",
+            "Ponto Alto Triplo : É o ponto mais alto do crochê, com três laçadas. É representado pela sigla “pat” e indica onde inserir a agulha para fazer o ponto.",
+            "Ponto Fantasia : São pontos decorativos que dão um toque especial às peças de crochê. Podem ser representados por diferentes abreviações, dependendo do ponto específico."
         ]
     }
 ];
 // caso nao conseguisse
-function Ponto(id) {
+function tradPonto(id) {
     const pag = document.querySelector("#pontos");
     const Pontos = pontos[0].pontos_de_croche;
 
@@ -94,7 +94,7 @@ function Ponto(id) {
     }
 }
 
-function tradPonto(id) {
+function Ponto(id) {
     const pag = document.querySelector("#pontos");
     let url = "/pontos.json";
     const xmlHttp = new XMLHttpRequest();
