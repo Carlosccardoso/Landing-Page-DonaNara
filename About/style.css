@@ -109,26 +109,38 @@ img {
 .segunda-box {
     background-color: var(--corfraca);
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     padding: 10%;
     color: var(--cormaisforte);
     max-width: 100%;
+    flex-direction: column;
 }
 
-.segunda-box div {
+
+.botao {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1em;
+    flex-direction: row;
+    padding: 8px;
+    gap: 5px;
+    margin: 10px;
+}
+
+.botao button {
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #ff0fc3;
+    color:white;
+    font-size: 70%;
+}.botao button:hover {
+    background-color: #A8E6CF;
 }
 
 .segunda-box div ul {
     margin: 1em;
 }
 
-.segunda-box div ul li {
+.segunda-box  ul li {
     list-style-type: circle;
-    font-size: 30px;
     color: rgb(85, 81, 81);
 }
 
